@@ -1,0 +1,80 @@
+@media (max-width: 600px) {
+  nav label {
+    /* color: aliceblue;
+        font-size: 1.6em;
+        line-height: 80px;
+        font-weight: 500;
+        padding: 0 1em; */
+    text-align: center;
+    /* display: inline-block; */
+  }
+
+  nav ul {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    width: 100%;
+    /* display: none; */
+    opacity: 0;
+    visibility: hidden;
+
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+  .show {
+    /* display: block; */
+    visibility: visible;
+    opacity: 1;
+  }
+  nav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    /* font-size: 1.1em;
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 1em; */
+  }
+  nav ul li a {
+    /* display: block;
+    color: aliceblue;
+    text-transform: uppercase;
+    padding: 0.3em 0.6em;
+    border-radius: 0.2em;
+    margin: 3px; */
+    padding: 0.3em 0.6em;
+  }
+  /* a.active,
+  a:hover {
+    background-color: rgb(41, 94, 163);
+    transition: 0.1s;
+  } */
+  .menu {
+    /* float: right;
+    cursor: pointer;
+    display: flex; */
+    display: block;
+  }
+  .menu:hover {
+    float: right;
+    cursor: pointer;
+    background-color: rgb(41, 94, 163);
+  }
+  .moon {
+    background-position: right;
+  }
+}
+
+/* .
+.
+.
+.
+. */
+@media (max-width: 860px) {
+  nav ul li {
+    margin: 0;
+  }
+  nav ul li a {
+    font-size: 0.9em;
+    margin: 0;
+  }
+}

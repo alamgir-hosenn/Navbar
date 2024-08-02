@@ -1,48 +1,69 @@
 * {
   padding: 0;
   margin: 0;
+  text-decoration: none;
+  list-style: none;
   box-sizing: border-box;
 }
-main {
-  display: flex;
-  flex-direction: column;
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-.menu_bar {
-  background-color: antiquewhite;
-  display: inline-block;
-  padding: 0.3em 0.5em;
-  font-size: 2em;
-  border: 2px solid red;
-  border-radius: 0.3em;
-  cursor: pointer;
+nav {
+  background: rgb(78, 149, 255);
+  height: 80px;
+  width: 100%;
+}
+nav label {
+  color: aliceblue;
+  font-size: 1.6em;
+  line-height: 80px;
+  font-weight: 500;
+  padding: 0 1em;
   user-select: none;
 }
-.hide {
-  background-color: red;
+
+nav ul {
+  float: right;
+  margin-right: 20px;
 }
-.menu_items {
-  position: absolute;
-  background-color: antiquewhite;
-  width: 100%;
-  padding: 1em;
-  top: 5em;
+nav ul li {
+  font-size: 1.1em;
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 1em;
 }
-.hidden {
+nav ul li a {
+  color: aliceblue;
+  text-transform: uppercase;
+  padding: 0.3em 0.6em;
+  border-radius: 0.2em;
+  margin: 3px;
+  user-select: none;
+}
+a.active,
+a:hover {
+  background-color: rgb(41, 94, 163);
+  transition: 0.1s;
+}
+
+.menu {
+  float: right;
+  cursor: pointer;
   display: none;
+  user-select: none;
+}
+.menu:hover {
+  float: right;
+  cursor: pointer;
+  background-color: rgb(41, 94, 163);
 }
 
-.menu_items ul {
-  text-align: center;
-  font-weight: 900;
-  font-size: 2em;
-}
-.menu_items ul li {
-  background-color: aquamarine;
-  list-style: none;
-  margin: 0.3em;
-  padding: 0.3em;
-}
-
-.me {
-  margin-top: 3em;
+.moon {
+  background: url(img/moon.jpg);
+  background-size: cover;
+  height: calc((100vh - 80px));
+  width: 100%;
+  background-position: right;
 }
